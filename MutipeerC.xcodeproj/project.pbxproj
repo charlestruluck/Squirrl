@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		563E52481EB94E9200629632 /* NavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563E52471EB94E9200629632 /* NavController.swift */; };
+		563FCD2D1EBA2EE50012FFCC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563FCD2C1EBA2EE50012FFCC /* Colors.swift */; };
+		56474DF81EC0E747000EB7CB /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56474DF71EC0E747000EB7CB /* SettingsController.swift */; };
 		5688506E1EB797A10098213E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688506D1EB797A10098213E /* AppDelegate.swift */; };
 		568850701EB797A10098213E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688506F1EB797A10098213E /* ViewController.swift */; };
 		568850731EB797A10098213E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568850711EB797A10098213E /* Main.storyboard */; };
 		568850751EB797A10098213E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 568850741EB797A10098213E /* Assets.xcassets */; };
 		568850781EB797A10098213E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 568850761EB797A10098213E /* LaunchScreen.storyboard */; };
+		568850801EB79A930098213E /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5688507F1EB79A930098213E /* MessageManager.swift */; };
+		568850841EB7F0C10098213E /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568850831EB7F0C10098213E /* MessageInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		563E52471EB94E9200629632 /* NavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavController.swift; path = ../NavController.swift; sourceTree = "<group>"; };
+		563FCD2C1EBA2EE50012FFCC /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		56474DF71EC0E747000EB7CB /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		5688506A1EB797A10098213E /* MutipeerC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MutipeerC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5688506D1EB797A10098213E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5688506F1EB797A10098213E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,9 @@
 		568850741EB797A10098213E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		568850771EB797A10098213E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		568850791EB797A10098213E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5688507F1EB79A930098213E /* MessageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
+		568850831EB7F0C10098213E /* MessageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
+		56B90DBE1EBCB08100D42D1E /* Squirrl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squirrl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,9 +43,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56B90DBB1EBCB08100D42D1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56474DF31EC0E6E7000EB7CB /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				563FCD2C1EBA2EE50012FFCC /* Colors.swift */,
+				5688507F1EB79A930098213E /* MessageManager.swift */,
+				568850831EB7F0C10098213E /* MessageInfo.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		56474DF41EC0E6F5000EB7CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				563E52471EB94E9200629632 /* NavController.swift */,
+				56474DF71EC0E747000EB7CB /* SettingsController.swift */,
+				5688506F1EB797A10098213E /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		56474DF51EC0E6FF000EB7CB /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				568850791EB797A10098213E /* Info.plist */,
+				568850741EB797A10098213E /* Assets.xcassets */,
+				5688506D1EB797A10098213E /* AppDelegate.swift */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		56474DF61EC0E715000EB7CB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				568850711EB797A10098213E /* Main.storyboard */,
+				568850761EB797A10098213E /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		568850611EB797A10098213E = {
 			isa = PBXGroup;
 			children = (
@@ -47,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				5688506A1EB797A10098213E /* MutipeerC.app */,
+				56B90DBE1EBCB08100D42D1E /* Squirrl.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,12 +112,10 @@
 		5688506C1EB797A10098213E /* MutipeerC */ = {
 			isa = PBXGroup;
 			children = (
-				5688506D1EB797A10098213E /* AppDelegate.swift */,
-				5688506F1EB797A10098213E /* ViewController.swift */,
-				568850711EB797A10098213E /* Main.storyboard */,
-				568850741EB797A10098213E /* Assets.xcassets */,
-				568850761EB797A10098213E /* LaunchScreen.storyboard */,
-				568850791EB797A10098213E /* Info.plist */,
+				56474DF51EC0E6FF000EB7CB /* Misc */,
+				56474DF41EC0E6F5000EB7CB /* Controllers */,
+				56474DF31EC0E6E7000EB7CB /* Utilities */,
+				56474DF61EC0E715000EB7CB /* Storyboards */,
 			);
 			path = MutipeerC;
 			sourceTree = "<group>";
@@ -84,6 +140,23 @@
 			productReference = 5688506A1EB797A10098213E /* MutipeerC.app */;
 			productType = "com.apple.product-type.application";
 		};
+		56B90DBD1EBCB08100D42D1E /* Squirrl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56B90DCC1EBCB08100D42D1E /* Build configuration list for PBXNativeTarget "Squirrl" */;
+			buildPhases = (
+				56B90DBA1EBCB08100D42D1E /* Sources */,
+				56B90DBB1EBCB08100D42D1E /* Frameworks */,
+				56B90DBC1EBCB08100D42D1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Squirrl;
+			productName = Squirrl;
+			productReference = 56B90DBE1EBCB08100D42D1E /* Squirrl.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +168,11 @@
 				ORGANIZATIONNAME = "Charles Truluck";
 				TargetAttributes = {
 					568850691EB797A10098213E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GYHKEST686;
+						ProvisioningStyle = Automatic;
+					};
+					56B90DBD1EBCB08100D42D1E = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = GYHKEST686;
 						ProvisioningStyle = Automatic;
@@ -115,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				568850691EB797A10098213E /* MutipeerC */,
+				56B90DBD1EBCB08100D42D1E /* Squirrl */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +209,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		56B90DBC1EBCB08100D42D1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,8 +223,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				563E52481EB94E9200629632 /* NavController.swift in Sources */,
+				563FCD2D1EBA2EE50012FFCC /* Colors.swift in Sources */,
+				568850801EB79A930098213E /* MessageManager.swift in Sources */,
+				56474DF81EC0E747000EB7CB /* SettingsController.swift in Sources */,
+				568850841EB7F0C10098213E /* MessageInfo.swift in Sources */,
 				568850701EB797A10098213E /* ViewController.swift in Sources */,
 				5688506E1EB797A10098213E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56B90DBA1EBCB08100D42D1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,8 +363,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GYHKEST686;
 				INFOPLIST_FILE = MutipeerC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ctruluck.MutipeerC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctruluck.MultipeerC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -278,10 +377,45 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GYHKEST686;
 				INFOPLIST_FILE = MutipeerC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ctruluck.MutipeerC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctruluck.MultipeerC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		56B90DCA1EBCB08100D42D1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = GYHKEST686;
+				INFOPLIST_FILE = Squirrl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctruluck.Squirrl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		56B90DCB1EBCB08100D42D1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = GYHKEST686;
+				INFOPLIST_FILE = Squirrl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctruluck.Squirrl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
 		};
@@ -304,6 +438,16 @@
 				5688507E1EB797A10098213E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56B90DCC1EBCB08100D42D1E /* Build configuration list for PBXNativeTarget "Squirrl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56B90DCA1EBCB08100D42D1E /* Debug */,
+				56B90DCB1EBCB08100D42D1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
